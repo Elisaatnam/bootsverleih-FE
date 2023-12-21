@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import Boats from "./pages/Boats/Boats";
 import Reservation from "./pages/Reservation/Reservation";
 import CreateBoat from "./pages/CreateBoat/CreateBoat";
+import CreateReservation from "./pages/CreateReservation/CreateReservation";
 
 function App() {
 	return (
@@ -12,8 +13,9 @@ function App() {
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/boats' element={<Boats />} />
-					<Route path='/reservation' element={<Reservation />} />
 					<Route path='/boats/new' element={<CreateBoat />} />
+					<Route path='/reservation' element={<Reservation />} />
+					<Route path='/reservation/new' element={<CreateReservation />} />
 				</Routes>
 			</BrowserRouter>
 		</>
